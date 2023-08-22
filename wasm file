@@ -1,0 +1,27 @@
+
+<html>
+<head>
+    <title>Naimbag Nga Bigat</title>
+</head>
+<body>
+    <div id="message"></div>
+
+    <script>
+        // Get the current date and time
+        const now = new Date();
+
+        // Get the current hour (0-23)
+        const hour = now.getHours();
+
+        // Determine whether it's morning or not
+        const isMorning = hour >= 0 && hour < 12;
+
+        // Define the message based on the time of day
+        const message = isMorning ? "Naimbag nga bigat!" : "Naimbag nga aldaw!";
+
+        // Display the message in the "message" div
+        const messageDiv = document.getElementById("message");
+        messageDiv.textContent = message;
+    </script>
+</body>
+</html>
